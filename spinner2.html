@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <script src="jquery.min.js"></script>
+
+    <style>
+
+
+
+#spinnero{
+  height: 10vh;
+  width: 10vh;
+
+  position: absolute;
+
+  top:50%; left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+#ele1 {
+
+height: 10vh;
+width: 10vh;
+border-radius: 50%;
+position: absolute;
+opacity:1;
+top:50%; left: 50%;
+transform: translate(-50%, -50%);
+border: 10px dotted #0000ff;
+animation: ruota 3s infinite alternate;
+
+}
+
+#ele2 {
+
+height: 10vh;
+width: 10vh;
+border-radius: 50%;
+position: absolute;
+opacity:1;
+top:50%; left: 50%;
+transform: translate(-50%, -50%);
+border: 10px dotted #0000ff;
+animation: ruotaa2 3s infinite alternate;
+}
+
+#ele3 {
+height: 5vh;
+width: 5vh;
+border-radius: 50%;
+position: absolute;
+opacity:1;
+top:50%; left: 50%;
+transform: translate(-50%, -50%);
+border: 8px dotted #0000ff;
+animation: ruotaa2 3s infinite alternate;
+}
+
+#ele4 {
+height: 7.5vh;
+width: 7.5vh;
+border-radius: 50%;
+position: absolute;
+opacity:1;
+top:50%; left: 50%;
+transform: translate(-50%, -50%);
+border: 8px dotted #0000ff;
+animation: ruotaa 3s infinite alternate;
+}
+
+
+
+
+@keyframes ruotaa {
+  0% {
+
+        transform:  translate(-50%, -50%)rotate(0deg);
+     }
+
+     100% {
+
+        transform:  translate(-50%, -50%)rotate(360deg);
+     }
+   }
+
+   @keyframes ruotaa2 {
+     0% {
+
+           transform:  translate(-50%, -50%)rotate(0deg);
+        }
+
+        100% {
+
+           transform:  translate(-50%, -50%)rotate(-360deg);
+        }
+      }
+
+
+
+
+</style>
+<div id="spinnero">
+<div class="ele" id="ele1"></div>
+<div class="ele" id="ele2"></div>
+<div class="ele" id="ele3"></div>
+<div class="ele" id="ele4"></div>
+<div class="ele" id="ele5"></div>
+<div class="ele" id="ele6"></div>
+<div class="ele" id="ele7"></div>
+<div class="ele" id="ele8"></div>
+</div>
+    </style>
+
+    </head>
+
+
+
+</html>

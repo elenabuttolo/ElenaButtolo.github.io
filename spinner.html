@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <script src="jquery.min.js"></script>
+
+    <style>
+
+.el {
+height: 10px;
+width: 10px;
+border-radius: 50%;
+background-color:#0000ff;
+position: absolute;
+opacity: 1;
+}
+#spinner {
+position: absolute;
+height: 10vh;
+width: 10vh;
+top:50%; left: 50%;
+animation: giro 0.8s infinite alternate;
+transform: translate(-50%, -50%);
+
+}
+
+#el1 {
+left: 0;
+top: 45%;
+animation: moveright 0.8s infinite alternate;
+}
+
+#el2 {
+top: 45%;
+left: 87%;
+position: absolute;
+
+animation: moveleft 0.8s infinite alternate;
+}
+#el3 {
+left: 45%;
+top: 1%;
+animation: movedown 0.8s infinite alternate;
+}
+#el4 {
+left:45%;
+bottom: 0;
+animation: moveup 0.8s infinite alternate;
+}
+#el5 {
+left:73%;
+top: 15%;
+animation: moveleftdown 0.8s infinite alternate;
+}
+#el6 {
+left:73%;
+bottom: 15%;
+animation: moveleftup 0.8s infinite alternate;
+}
+#el7 {
+left:15%;
+top: 73%;
+animation: moverightup 0.8s infinite alternate;
+}
+#el8 {
+left:15%;
+top: 15%;
+animation: movedownright 0.8s infinite alternate;
+}
+@keyframes movedownright {
+from {transform: translate(0%,0%)}
+to {transform: translate(500%,500%)}
+}
+@keyframes moveleftup {
+from {transform: translate(0%,0%)}
+to {transform: translate(-500%,-500%)}
+}
+@keyframes moveleft {
+from {transform: translateX(0)}
+to {transform: translateX(-1000%)}
+}
+@keyframes moveright {
+from {transform: translateX(0)}
+to {transform: translateX(1000%)}
+}
+@keyframes moveup {
+from {transform: translateY(0)}
+to {transform: translateY(-1000%)}
+}
+@keyframes movedown {
+from {transform: translateY(0)}
+to {transform: translateY(1000%)}
+}
+
+@keyframes moveleftdown {
+from {transform: translate(0,0)}
+to {transform: translate(-500%,500%)}
+}
+
+@keyframes moverightup {
+from {transform: translate(0,0)}
+to {transform: translate(500%,-500%)}
+}
+
+
+@keyframes giro {
+from {transform: translate(-50%, -50%)rotate(0);}
+to {transform:translate(-50%, -50%) rotate(360deg);}
+
+}
+
+</style>
+<div id="spinner">
+<div class="el" id="el1"></div>
+<div class="el" id="el2"></div>
+<div class="el" id="el3"></div>
+<div class="el" id="el4"></div>
+<div class="el" id="el5"></div>
+<div class="el" id="el6"></div>
+<div class="el" id="el7"></div>
+<div class="el" id="el8"></div>
+</div>
+    </style>
+
+    </head>
+
+
+
+</html>
